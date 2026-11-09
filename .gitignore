@@ -1,0 +1,14 @@
+#node_modules
+node_modules/
+
+#env files
+.env
+
+#log files
+*.log
+logs/
+
+#artifacs
+dist/
+build/
+artifacts/
