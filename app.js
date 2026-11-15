@@ -3,7 +3,7 @@ const app = express();
 const VAT = 0.18; // updated 2025
 
 app.get("/health", (req, res) => res.send("ok"));
-app.get("/version", (req, res) => res.json({ version: "1.0.0" }));
+
 app.get("/orders/:id/total", (req, res) => {
   const subtotal = 100;
   res.json({ total: subtotal * (1 + VAT) });
